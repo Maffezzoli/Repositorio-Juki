@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    background-color: #dbb6ee;
+    animation: aparecer 0.8s ease forwards;
+}
+@keyframes aparecer{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* navbar */
+.navbar-container {
+    z-index: 1;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 140px;
+    border-bottom: 2px dotted #a66dc7;
+    background-color: #b57edc;
+}
+nav {
+    position: relative;
+}
+.navbar-container img{
+    width: 150px;
+    margin-left: 15px;
+}
+.navbar-items {
+    position: absolute;
+    left: 170px;
+    top: 70px;
+    margin: 0;
+    display: inline-block;
+  }
+.navbar-items li {
+  position: relative;
+  bottom: 0px;
+  display: inline-block;
+  text-transform: uppercase;
+  margin-left: 25px;
+}
+.navbar-items a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #4b1c71;
+  }
+    /* caixa flutuante hover */
+.navbar-items li ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #f9f9f9;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.navbar-items li:hover ul {
+    display: block;
+    margin-top: 0px;
+}
+.navbar-items li ul li {
+    display: block;
+    text-transform: capitalize;
+    margin-top: 5px;
+}
+.navbar-items li ul li:first-child {
+    margin-top: 0px;
+}
+/* grid de imagens */
+.box{
+    border: 1px solid #a66dc7;
+    border-radius: 5px;
+    width: 49%;
+    margin: auto;
+    height: 640px;
+    
+}
+.box img{
+    border-radius: 10px;
+    width: 100%;
+}
+.flex-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: relative;
+    top: 142px;
+    width: 80%;
+    margin: 10px auto;
+}
+
+/* grid favicons */
+.favicons-grid img{
+    width: 65px;
+}
+.favicons-grid {
+    position: fixed;
+    bottom: 0;
+    right: 5px;
+}
