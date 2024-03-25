@@ -52,6 +52,7 @@ nav {
   }
     /* caixa flutuante hover */
 .navbar-items li ul {
+    z-index: 100;
     display: none;
     position: absolute;
     left: 0;
@@ -75,7 +76,6 @@ nav {
 }
 /* grid de imagens */
 .box{
-    border: 1px solid #a66dc7;
     border-radius: 5px;
     width: 49%;
     margin: auto;
@@ -104,4 +104,34 @@ nav {
     position: fixed;
     bottom: 0;
     right: 5px;
+}
+@media (max-width: 500px){
+    /* navbar */
+    .navbar-container img{
+        margin-top: 7px;
+    }
+    .navbar-items li {
+        bottom: 35px;
+        display: block;
+      }
+      .navbar-container {
+        height: 150px;
+    }
+    .navbar-items li ul li:first-child {
+        margin-top: 35px;
+    }
+    /* grid */
+    .flex-grid{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        position: relative;
+        top: 142px;
+        width: 90%;
+        margin: 30px auto;
+    }
+    .box{
+        height: 0px;
+        margin-bottom: 250px;
+    }
 }

@@ -187,6 +187,9 @@ main {
 }
 
 @media (max-width: 500px){
+    .navbar-container img{
+        margin-top: 7px;
+    }
     .navbar-items li {
         bottom: 35px;
         display: block;
@@ -197,20 +200,26 @@ main {
     .navbar-items li ul li:first-child {
         margin-top: 35px;
     }
+    .braum{
+        top: 180px;
+    }
+    .image-container .overlay{
+        top: -157px;
+    }
     .comission {
         left: 55px;
-        top: 550px;
+        top: 530px;
     }
     .image-container .overlay_c {
         left: 55px;
-        top: -120px;
+        top: -140px;
     }
     .general_art_work {
         left: 25px;
-        top: 970px;
+        top: 950px;
     }
     .image-container .overlay_g{
         left: 25px;
-        top: -110px;
+        top: -130px;
     }
 }
