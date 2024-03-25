@@ -6,6 +6,7 @@ html {
     overflow-y: hidden;
     background-color: #dbb6ee;
     animation: aparecer 0.8s ease forwards;
+    overflow-y: unset;
 }
 @keyframes aparecer{
     from {
@@ -53,6 +54,7 @@ nav {
   }
   /* caixa flutuante hover */
 .navbar-items li ul {
+    z-index: 10;
     display: none;
     position: absolute;
     left: 0;
@@ -184,3 +186,31 @@ main {
     opacity: 1;
 }
 
+@media (max-width: 500px){
+    .navbar-items li {
+        bottom: 35px;
+        display: block;
+      }
+      .navbar-container {
+        height: 150px;
+    }
+    .navbar-items li ul li:first-child {
+        margin-top: 35px;
+    }
+    .comission {
+        left: 55px;
+        top: 550px;
+    }
+    .image-container .overlay_c {
+        left: 55px;
+        top: -120px;
+    }
+    .general_art_work {
+        left: 25px;
+        top: 970px;
+    }
+    .image-container .overlay_g{
+        left: 25px;
+        top: -110px;
+    }
+}
